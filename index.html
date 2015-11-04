@@ -1,63 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html style='background-color:#000;'>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/index.css">
-
+<meta name="viewport" content="width=1024" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/impress.css">
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function(){
-			$('section').css("height",window.innerHeight);
-			$('section').css("width",window.innerWidth);
-		})
+	$(document).ready(function(){
+		alert(window.innerHeight+":"+window.innerWidth);
+		$(".step").css("height",2*window.innerHeight);
+		$(".step").css("width",2*window.innerWidth);
+	});
 	</script>
-	<style type="text/css">
-
-	</style>
-
-	<title>The Gaming Fest'16</title>
-</head>
-<body>
-	<section class='sections' id='home'>
-		<div class='wrapper'>
-			<div id='bigLogo'>
-				<img src="./imgs/tgf_logo.png">
-			</div>
-			<div id='title' class='font'>
-				THE GAMING FEST 2016
-			</div>
-		</div>
-	</section>
-	<section class='sections' id='games'>
-		<div class='container-fluid' style='height:100%;'>
-			<div class='row' style="height:100%;">
-				<div class='col-sm-2 col-xs-12 game_covers' id='game_cover_1'>
-					<!-- <img src="./imgs/cs_cover.jpg" > -->
-				</div>
-				<div class='col-sm-2 col-xs-12 game_covers' id='game_cover_2'>
-					<!-- <img src="./imgs/fifa_cover.jpg" > -->
-				</div>
-				<div class='col-sm-2 col-xs-12 game_covers' id='game_cover_3'>
-					<!-- <img src="./imgs/cod_cover.jpg" > -->
-				</div>
-				<div class='col-sm-2 col-xs-12 game_covers' id='game_cover_4'>
-					<!-- <img src="./imgs/dota_cover.jpg" > -->
-				</div>
-				<div class='col-sm-2 col-xs-12 game_covers' id='game_cover_5'>
-					<!-- <img src="./imgs/nfs_cover.jpg" > -->
-				</div>
-				<div class='col-sm-2 col-xs-12 game_covers' id='game_cover_6'>
-					<!-- <img src="./imgs/cs_cover.jpg" > -->
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class='sections' id='prizes'>
-		
-	</section>
-</body>
-<script type="text/javascript">
 	
-</script>
+</head>
+<body class="impress-not-supported">
+	<div id='impress'>
+		<div id='slide0' class='step' data-x="0" data-y="0">
+			Home
+		</div>
+		<div id='slide1' class='step' data-x="3000" data-y="0" data-z="-1500" data-scale="1">
+			Game 1
+		</div>
+		<div id='slide-1' class='step' data-x="-3000" data-y="0" data-z="-1500" data-scale="1">
+			Game -1
+		</div>
+		<div id='slide2' class='step' data-x="6000" data-y="0" data-z="-3000" data-scale="1">
+			Game 2
+		</div>
+		<div id='slide-2' class='step' data-x="-6000" data-y="0" data-z="-3000" data-scale="1">
+			Game -2
+		</div>
+		<div id='slide3' class='step' data-x	="9000" data-y="0" data-z="-6000" data-scale="1">
+			Game 3
+		</div>
+
+	</div>
+	<script type="text/javascript" src="./js/impress.js"></script>
+	<script type="text/javascript" src="./js/impress_sample.js"></script>
+</body>
+
 </html>

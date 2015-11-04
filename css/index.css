@@ -1,26 +1,26 @@
-@font-face{font-family: veselka;  src:url("../fonts/veselka_4f.ttf"); }
+.step{color:#fff; font-size: 40px;}
 
-
-*{padding:0px; margin:0px;}
-html{background:url("../imgs/home_back.jpg") no-repeat center center fixed; background-size:cover;}
-body{overflow-x: hidden; background-color: rgba(0,0,0,0.0); }	
-section{height:100%; width:100%;}
-#bigLogo{margin:0px auto; width:550px; position: relative;}
-#bigLogo img{width:100%;}
-#title{font-family: veselka; font-size: 100	px; position: relative; margin:0px auto; display: table; color:#fff;}
-
-.game_covers{height:100%; padding:0px; /*background-color: green;*/ border:1px solid #000;}
-.game_covers img{height:100%;}
-
-#game_cover_1{background:url("../imgs/cs_cover.jpg") no-repeat center center; background-size: cover;}
-#game_cover_2{background:url("../imgs/fifa_cover.jpg") no-repeat center center; background-size: cover;}
-#game_cover_3{background:url("../imgs/dota_cover.jpg") no-repeat center center; background-size: cover;}
-#game_cover_4{background:url("../imgs/cod_cover.jpg") no-repeat center center; background-size: cover;}
-#game_cover_5{background:url("../imgs/nfs_cover.jpg") no-repeat center center; background-size: cover;}
-#game_cover_6{background:url("../imgs/cs_cover.jpg") no-repeat center center; background-size: cover;}
-
-
-@media (max-width: 768px){
-	.game_covers{height: 16.667%;}
-	
+#slide0{background: url("../img1.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+}
+#slide1{background: url("../img2.jpg");
+					background-repeat: no-repeat;
+					background-size: cover;
+}
+#slide2{background: url("../img3.jpg");
+					background-repeat: no-repeat;
+					background-size: cover;
+}
+#slide3{background: url("../img2.jpg");
+					background-repeat: no-repeat;
+					background-size: cover;
+}
+#slide-1{background: url("../img3.jpg");
+					background-repeat: no-repeat;
+					background-size: cover;
+}
+#slide-2{background: url("../img2.jpg");
+					background-repeat: no-repeat;
+					background-size: cover;
 }
