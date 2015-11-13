@@ -16,3 +16,19 @@ $("body").keydown(function(event){
 	impress().goto(nSlide);
 	event.preventDefault();
 });
+
+$(function(){
+    $("#guide_callout").typed({
+	    strings: ["First sentence.","Second Sentence"],
+        typeSpeed: 0,
+        loop: true,
+        showCursor: false
+    });
+});
+
+$(".menu_items").click(function(){
+	var id=$(this).attr("id");
+	$("#"+id+"_content").removeClass("deactive");
+	$("#"+id+"_content").siblings().removeClass("active").addClass("deactive");
+	$("#"+id+"_content").addClass("active");
+});
