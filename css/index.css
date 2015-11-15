@@ -23,7 +23,11 @@ html{background-color: #000; }
 					background-repeat: no-repeat;
 					background-size: cover;
 }
-#slide-2{background: url("../img2.jpg");
+#slide-2{background: url("../imgs/dota_back.jpg");
+					background-repeat: no-repeat;
+					background-size: cover;
+}
+#slide01{background:url("../imgs/about_back.jpg");
 					background-repeat: no-repeat;
 					background-size: cover;
 }
