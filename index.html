@@ -6,16 +6,32 @@
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/typed.js"></script>
+	<script type="text/javascript" src="./js/jquery.slimscroll.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
 		//alert(window.innerHeight+":"+window.innerWidth);
 		$(".step").css("height",1.12*window.innerHeight);
 		$(".step").css("width",1.12*window.innerWidth);
+		rotateCube();
+		$("#contact_left ul").slimScroll({width:"100%",height:"95%"});
 	});
 	</script>
 	
 </head>
 <body class="impress-not-supported">
+	<!-- <div id='ansh'></div> -->
+	<div class='help' style='z-index:1000;'>
+		<div class='help_circle'>
+			<span id='W' class='help_l top_e'>W</span>
+			<span id='A' class='help_l left_e'>A</span>
+			<span id='D' class='help_l right_e'>D</span>
+			<span id='S' class='help_l bottom_e'>S</span>
+			<span id='top' class='help_s top_e'></span>
+			<span id='left' class='help_s left_e'></span>
+			<span id='right' class='help_s right_e'></span>
+			<span id='bottom' class='help_s bottom_e'></span>
+		</div>
+	</div>
 	<div id='impress'>
 		<div id='slide0' class='step' data-x="0" data-y="0">
 			<div class='black_cover'></div>
@@ -33,20 +49,23 @@
 					<img src="./imgs/milan_logo.png">
 				</div>
 			</div>
-			<div id='prev_btn' class='nav_btn'>
+			<!-- <div id='prev_btn' class='nav_btn'>
 				<img src="./imgs/prev_white.png">
 			</div>
 			<div id='next_btn' class='nav_btn'>
 				<img src="./imgs/next_white.png">
-			</div>
+			</div> -->
+			<div id='gamingclub_text'>SRM GAMING CLUB</div>
+			<div id='presents'>PRESENTS</div>
 			<div id='head_logo'>
-				<img src="./imgs/tgf_logo.png">
+				<img src="./imgs/tgf_head.png">
 			</div>
-			<div id='head_text'>
+			<!-- <div id='head_text'>
 					THE GAMING FEST'16
-				<!-- <span id='t1'>THE GAMING FEST'16</span> -->
-				<!-- <span id't2'>Everything else is child's play</span> -->
-			</div>
+			</div> -->
+			<!-- <div id='tagline'>
+				Hush...It's Gaming Time...
+			</div> -->
 		</div>
 		<div id='slide1' class='step' data-x="3000" data-y="0" data-z="-1500" data-scale="1">
 			<div class='black_cover'></div>
@@ -66,8 +85,9 @@
 					<td >
 						<div class='game_content'>
 							<ul class='description'>
-								<li class='active' id='game1_title_content'> 
-									Counter Strike is a game
+								<li class='active' id='game1_title_content' style='font-size:19px;'> 
+									"Esprit de corps” is the key!<br><br>
+									Engage in an incredibly realistic brand of terrorist warfare in this wildly popular team-based game. Synergize with teammates to complete strategic missions. Figure out enemy sites and rescue hostages. Your role affects your team's success. Your team's success affects your role.
 								</li>
 								<li class='deactive' id='game1_1_content'>
 									<center><span class='content_head'>Pro/Semi-Pro Level</span></center>
@@ -77,8 +97,16 @@
 									I Prize - &#8377; 15,000 <br>
 									II Prize - &#8377; 7,500
 								</li>
-								<li class='deactive' id='game1_2_content'>
-									rules
+								<li class='deactive game_rules' id='game1_2_content'>
+									<ul>
+										<li>If a team player is missing before the match starts the team will have to find a substitute within 10 15 mins or else they will be disqualified</li>
+										<li>One match would be a best of 7, the first team to win the 7 rounds win. Semi-finals would be a best of 11 and Finals of best of 15.</li>
+										<li>Team Switch :  four rounds , for semi-finals: 6 rounds, for finals: 8 rounds</li>
+										<li>Round limit would be: 1 minute and 45 seconds.</li>
+										<li>Buy time would be 10 seconds.</li>
+										<li>C4 timer : 35 sec</li>
+										<li>Starting money would be $800</li>
+									</ul>
 								</li>
 								<li class='deactive' id='game1_3_content'>
 									event details
@@ -97,7 +125,7 @@
 
 					</td>
 					<td>
-						<span class='game_name menu_items' id='game1_title'>Call of Duty - Modern Warfare</span>
+						<span class='game_name menu_items' id='game1_title'>Call of Duty 4 - Modern Warfare</span>
 						<br><br>
 						<ul class="menu">
 							<li class="menu_items" id='game-1_1'>prize pool</li>
@@ -107,7 +135,9 @@
 					<td>
 						<div class='game_content'>
 							<ul class='description'>
-								<li class='active' id='game-1_title_content'>COD4 MW</li>
+								<li class='active' id='game-1_title_content' style='font-size:19px;'>
+									This is the ultimate manifestation of modern equipment and new features. A five player team game takes over all your senses to scrutinize "knee-jerk reactions". Ransack through to find the other team's bomb and destroy it in minimal time, to win the game!
+								</li>
 								<li class='deactive' id='game-1_1_content'>
 									<center><span class='content_head'>Pro/Semi-Pro Level</span></center>
 									I Prize - &#8377; 50,000 <br>
@@ -116,8 +146,17 @@
 									I Prize - &#8377; 12,500 <br>
 									II Prize - &#8377; 5,500
 								</li>
-								<li class='deactive' id='game-1_2_content'>
-									rules
+								<li class='deactive game_rules' id='game-1_2_content'>
+									<ul>
+										<li>Game: Call Of Duty 4 Promod</li>
+										<li>Game Mode: Search and Destroy 5v5</li>
+										<li>Maps: Ambush, Backlot, Bloc, Bog, Countdown, Crash, Crossfire, District, Showdown, Strike, Chinatown.</li>
+										<li>Winner of a toss will select the map or the side while the loser selects the other. Map will be chosen first.</li>
+										<li>Round Switch will occur every four rounds.</li>
+										<li>Prelims can be first to 6. Quarters are first to 13. Semis and Finals is a best of 3 with first to 13 in each match.</li>
+										<li>Bomb plant and Defuse is 5 seconds.</li>
+										<li>Bomb Timer is 45 seconds</li>
+									</ul>
 								</li>
 								<li class='deactive' id='game-1_3_content'>
 									event details
@@ -148,8 +187,9 @@
 					<td>
 						<div class='game_content'>
 							<ul class='description'>
-								<li class='active' id='game2_title_content'>
-									NFS Most Wanted
+								<li class='active' id='game2_title_content' style='font-size:19px;'>
+									GET, SET, GO..!<br><br>
+									This time get down to the streets to attain the utmost speeding action. Take control over the wheels and let the sparks instill. Put on your seatbelts for the course that takes you with a fast gameplay which involves 4 players going head on against each other.
 								</li>
 								<li class='deactive' id='game2_1_content'>
 									<center><span class='content_head'>Prize Pool</span></center>
@@ -157,8 +197,28 @@
 									II Prize - &#8377; 10,000 <br>
 									II Prize - &#8377; 5,000 <br>
 								</li>
-								<li class='deactive' id='game2_2_content'>
-									rules
+								<li class='deactive game_rules' id='game2_2_content'>
+									<ul>
+										<li>Competition Mode: 4 players</li>
+										<li>Game Type: Circuit/Sprint</li> 
+										<li>Qualification: The player who comes first in the race will be qualified for the next round.</li><!--changed-->
+										<br>
+										<span style='font-size:19px;'>Car Settings:</span>
+										<li>Upgrades are NOT allowed.(It includes visual,performance etc.)</li>
+										<li>Junkman is NOT allowed.</li>
+										<li>Personal savedfiles are NOT allowed.</li>
+										<br>
+										<span style='font-size:19px;'>Tracks</span>
+										<li>RANDOM</li>
+										<br>
+										<span style='font-size:19px;'>Race Mode Options:</span>
+										<li>Circuit/Sprint</li>
+										<li>N<sub>2</sub>O: On</li>
+										<li>Collision Detection: On</li>
+										<li>Performance Matching: On</li>
+										<li>Minimum Players : 4</li>
+									</ul>
+
 								</li>
 								<li class='deactive' id='game2_3_content'>
 									event details
@@ -189,8 +249,8 @@
 					<td>
 						<div class='game_content'>
 							<ul class='description'>
-								<li class='active' id='game-2_title_content'>
-									DOTA 2
+								<li class='active' id='game-2_title_content' style='font-size:19px;'> 
+									"Five canny brains" is all you need to combat one of the opposite sides of Dire and Radiant in the playing field. Each player commands one of 110 "Hero" characters, which feature unique abilities. "Ancient", the decree that regenerates Heroes' health and magic points is destroyed with the breach of one side in other's stronghold to win the battle.
 								</li>
 								<li class='deactive' id='game-2_1_content'>
 									<center><span class='content_head'>Pro/Semi-Pro Level</span></center>
@@ -200,8 +260,13 @@
 									I Prize - &#8377; 15,000 <br>
 									II Prize - &#8377; 7,500
 								</li>
-								<li class='deactive' id='game-2_2_content'>
-									rules
+								<li class='deactive game_rules' id='game-2_2_content'>
+									<ul>
+										<li>Sides (Radiant/Dire; Ban first) will be announced before the match or decided by a coin toss.</li>
+										<li>Victory condition: The first team to destroy the other team’s ancient or when called for &quot;GG&quot;, whichever called first.</li>
+										<li>For pro participation:4k mmr of minimum 3 players in a team</li>
+										<li>If a team player is missing before the match starts the team will have to find a substitute within 10-15 mins or else they will be disqualified</li>
+									</ul>
 								</li>
 								<li class='deactive' id='game-2_3_content'>
 									event details
@@ -221,7 +286,7 @@
 						
 					</td>
 					<td>
-						<span class='game_name menu_items' id='game3_title'>FIFA '16</span>
+						<span class='game_name menu_items' id='game3_title'>FIFA '15</span>
 						<br><br>
 						<ul class='menu'>
 							<li class='menu_items' id='game3_1'>prize pool</li>
@@ -232,8 +297,8 @@
 					<td>
 						<div class='game_content'>
 							<ul class='descrioption'>
-								<li class='active' id='game3_title_content'>
-									FIFA' 16
+								<li class='active' id='game3_title_content' style='font-size:19px;'>
+									"Treat to eyes and a feast to gobble", for all soccer maniacs. This game gives you the extra ordinary opportunity to play with your favorite teams and players. With all the players on the field, it provides an exhilarating experience to behold!
 								</li>
 								<li class='deactive' id='game3_1_content'>
 									<center><span class='content_head'>Prize Pool</span></center>
@@ -241,8 +306,19 @@
 									II Prize - &#8377; 10,000 <br>
 									II Prize - &#8377; 5,000 <br>
 								</li>
-								<li class='deactive' id='game3_2_content'>
-									rules
+								<li class='deactive game_rules' id='game3_2_content'>
+									<ul>
+										<li>Difficulty Level: Professional</li>
+										<li>Half Length: 5 minutes</li>
+										<li>Injuries: On</li>
+										<li>Offside: On</li>
+										<li>Camera: Tele</li>
+										<li>Radar: 2D or 3D</li>
+										<li>Home Auto Switching: User Settings</li>
+										<li>Away Auto Switching: User Settings</li>
+										<li>Extra Time: Classic time will be played in the event of the draw after regulation. Penalties will decide the winner if after extra time the scores are level</li>
+										<li>Custom formations are not permitted. However custom tactics and set pieces are available</li>
+									</ul>
 								</li>
 								<li class='deactive' id='game3_3_content'>
 									event details
@@ -254,13 +330,100 @@
 				</tr>				
 			</table>
 		</div>
-		<style type="text/css">
-			#abt{position: relative; margin:0px auto; height:100px;}
-		</style>
-		<div id='slide01' class='step' data-x="0" data-y="3000" data-scale="1">
+		<div id='slide01' class='step' data-x="0" data-y="1800" data-scale="1">
 			<div class='black_cover'></div>
-			<div id='abt'style='height:100px;'>
-				<img src="./imgs/razor.png">
+			<div id='about_box'>				
+				<div id='abt_left' class='abt_children'>					
+					<div class='head' id='abt_head'>What's so special in it?</div>
+					<div>
+						"The Gaming Fest" is back with a bang! Get ready for "edge of the seat drama" in outrageous fashion. This one promises to raise the bar set by its last edition in 2015.
+						<br>
+						TGF'15 welcomed participants from all over the country. The fest not only offered indefatigable gaming, but perky hands-on with X-BOX and Play Station to keep up the high spirits of the game. It conferred with prizes worth 2.5 Lakh INR.
+						<br>
+						This zealous edition of the franchise is all set to bring the house down. Let the action of racing cars, swooping aliens and hurling bullets unfold like never before and you take over all of them with your gaming controllers! Get the complete feel through unceasing video projection and exclusive personalized photos.
+						<br>
+						As the intensity increases, so do the stakes, with prizes worth 6 Lakh INR (INR 3.25 Lakh + and 2.75 Lakh*) to be won in TGF'16.Witness the unyielding nature of the "gamer-junkies" only here, in South India's Largest Gaming Fest. 
+						<br>
+						So, come aboard with us in this highly daunting voyage from 4th to 6th March, 2016.
+					</div>
+				</div>
+				<div id='abt_right' class='abt_children'>
+					<!-- <div id='cube_holder'>				 -->
+						<div id='cube' class='face1'>
+							<div id='f1' class='faces'>
+								<img src="./imgs/cs_logo.png">
+							</div>
+							<div id='f2' class='faces'>
+								<img src="./imgs/dota_logo.png">
+							</div>
+							<div id='f3' class='faces'>
+								<img src="./imgs/fifa_logo.png">
+							</div>
+							<div id='f4' class='faces'>
+								<img src="./imgs/nfs_logo.png">
+							</div>
+							<div id='f5' class='faces'>
+								<img src="./imgs/cod_logo.png">
+							</div>
+							<div id='f6' class='faces'>
+
+							</div>
+						</div>
+					<!-- </div> -->
+				</div>	
+			</div>
+		</div>
+		<!-- <div id='slide00002' class='step' data-x="0" data-y="3600" data-scale="1">
+			<div class='black_cover'></div>
+
+		</div> -->
+		<div id='slide02' class='step' data-x="0" data-y="3600" data-scale="1">
+			<div class='black_cover'></div>
+			<div id='contact_box'>
+				<div id='contact_left' class='contact_children'>
+					<div class='head' id='faq_head'>FAQ</div>
+					<ul>
+						<li><span>Q.</span> What is TGF'15? When is the Fest held?</li>
+						<li><span>A.</span> TGF'15 is an National Level Gaming Fest in cultural fest Milan'15, SRM, with an whooping aggregate of 2.5Lakh prize money to be distributed among the winners. The Fest is hosted from 29th January to 31st January, inaugurating at 11 AM on 29th January.</li>
+						<br>
+			        	<li><span>Q.</span> How do i register for the fest?</li>
+						<li><span>A.</span> You can get yourself registered at the Registration Desk, inside the campus, by paying an nominal fee of Rs.100.</li>
+						<br>
+			            <li><span>Q.</span> How do I reach the campus?</li>
+						<li><span>A.</span> Please Click <a href="https://www.google.co.in/maps/place/SRM+Hotel/@12.8238484,80.0417975,17z/data=!4m6!1m3!3m2!1s0x3a52f70d37c35faf:0x150be8ecf0c8f817!2sSRM!3m1!1s0x0000000000000000:0xa80fefd600a7db0c">here</a></li>
+						<br>
+						<li><span>Q.</span> What are the accommodation and cuisine facilities available?</li>
+						<li><span>A.</span> Accommodation if opted for, will be available to the participants at the nominal fee of Rs150 in the campus dorms. During the fest, stalls will be setup for 100 continuous hours that will keep you entertained and food-packed.</li>
+						<br>
+						<li><span>Q.</span> What is the Configuration of the Systems available?</li>
+						<li><span>A.</span> Intel Core i5, 4th Gen Processor, 1GB Intel HD Graphics, 4GB RAM, 1TB HardDisk, 15.6" LCD Screen, Key-Board, Mouse</li>
+						<br>
+			            <li><span>Q.</span> Will the gaming consoles provided by you?</li>
+			         	<li><span>A.</span> No. Players have to get their own consoles.</li>
+			         	<br>
+						<li><span>Q.</span> When will I get the prize money?</li>
+			         	<li><span>A.</span> Prize Money will be distributed at the end of the fest, during the Prize Distribution Ceremony. It is mandatory for the participant to produce the ID cards.</li>
+			         	<br>
+						<li><span>Q.</span> Can I register in both Amateur and Pro?</li>
+			         	<li><span>A.</span> Yes. If you satisfy the condition specified in the rules and regulations tab you are eligible for both amateur and pro.For Dota- If more than three members in a team have more than 4000 MMR they are not allowed to register in Amateur category.For CS- If more than three members in a team has represented in ESWC, WCG etc the team cannot register in Amateur category. </li>
+			         	<br>
+						<li><span>Q.</span> What if I lose my registration card?</li>
+			         	<li><span>A.</span> In any circumstances, if you lose you registration card, you would have to re-register yourself in order to advance in the game if any.</li>
+			         	<br>
+						<li><span>Q.</span> What are the timings of matches?</li>
+			         	<li><span>A.</span> The Event inaugurates at 11AM on 29th January. Any delay, if any, would be because of some internal problems. Participants are requested to co-operate with same. </li>
+			         	<br>
+						<li><span>Q.</span> How will I be engaged between my games?</li>
+			         	<li><span>A.</span> Since The Fest runs at an stretch of 100 hours, there will be cultural fests, non-technical events, pro-shows etc to keep you entertained. You can further enjoy freebies on XBOX, Playstation etc . You can further sooth your eyes by watching the top games projected on various screens around the campus.</li>
+						<br>
+						<li><span>Q.</span> How will I be informed about my fixtures?</li>
+			         	<li><span>A.</span> Your fixtures details will be sent to your contact details so the participants are requested to keep themselves updated to their contact detail or they may miss the action. Be in touch with event coordinator.</li>
+						<br>
+						<li><span>Q.</span> Whom should i contact in the case of any discrepancy?</li>
+			         	<li><span>A.</span> In case of any discrepancy, you are requested to inform the event coordinator immediately and they will look into the matter to solve the problem.</li>
+					</ul>
+				</div>
+				<div id='contact_right' class='contact_children'></div>
 			</div>
 		</div>
 	</div>

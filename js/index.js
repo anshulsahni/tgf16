@@ -12,7 +12,7 @@ $("body").keydown(function(event){
 	{	current_key++; flag='h';	}
 	else if((event.keyCode==83 || event.keyCode==87) && current_key==0)
 	{
-		if(event.keyCode==83 && vertical_nav<1)
+		if(event.keyCode==83 && vertical_nav<3)
 			vertical_nav++;
 		else if(event.keyCode==87 && vertical_nav>0)
 			vertical_nav--;
@@ -29,7 +29,17 @@ $("body").keydown(function(event){
 		else
 			nSlide="slide0"+vertical_nav;
 	}
-	impress().goto(nSlide);
+	impress().goto(nSlide,700);
+	if(vertical_nav!=0)
+		$(".left_e,.right_e").fadeOut("fast");
+	else
+		$(".left_e,.right_e").fadeIn("fase");
+
+	if(current_key!=0)
+		$(".top_e,.bottom_e").fadeOut("fast");
+	else
+		$(".top_e,.bottom_e").fadeIn("fast")
+
 	event.preventDefault();
 });
 
@@ -48,3 +58,23 @@ $(".menu_items").click(function(){
 	$("#"+id+"_content").siblings().removeClass("active").addClass("deactive");
 	$("#"+id+"_content").addClass("active");
 });
+
+function rotateCube(){
+	setInterval(function(){
+		var cls=$("#cube").attr("class");
+		if(cls=="face1")
+			var newCls="face3";
+		else if(cls=="face2")
+			var newCls="face6";
+		else if(cls=="face3")
+			var newCls="face5";
+		else if(cls=="face4")
+			var newCls="face2";
+		else if(cls=="face5")
+			var newCls="face4";
+		else if(cls=="face6")
+			var newCls="face1";
+		$("#cube").addClass(newCls);
+		$("#cube").removeClass(cls);
+	},2000);
+}

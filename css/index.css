@@ -1,13 +1,16 @@
 @font-face{font-family: cs; src:url("../fonts/cs_regular.ttf");}
+@font-face{font-family: borg; src:url("../fonts/Borg.ttf");}
+@font-face{font-family: keys; src:url("../fonts/TypeKeysFilled.ttf");}
+
 
 html{background-color: #000; }
 *{margin:0px; padding:0px;}
 .step{color:#fff; font-size: 40px;}
-#slide0{background: url("../img1.jpg");
+#slide0{background: url("../imgs/home_back.jpg");
 			background-repeat: no-repeat;
 			background-size: cover;
 }
-#slide1{background: url("../imgs/cs_back.png");
+#slide1{background: url("../imgs/cs_back.jpg");
 					background-repeat: no-repeat;
 					background-size: cover;
 }
@@ -31,13 +34,24 @@ html{background-color: #000; }
 					background-repeat: no-repeat;
 					background-size: cover;
 }
+#slide02{background:url("../imgs/sponsors_back.jpg");
+					background-repeat: no-repeat;
+					background-size: cover;
+}
+#slide03{background:url("../imgs/contact_back.jpg");
+						background-repeat: no-repeat;
+						background-size: cover;
+}
+#gamingclub_text{position: relative; font-size: 60px; font-family: borg; margin:0px auto; display: table; letter-spacing: 40px; top:20px;}
+#presents{position: relative; font-size: 30px; font-family: calibri; margin: 0px auto; display: table; top:20px;}
 #head_text{position: relative; font-size: 75px; color:#fff; font-family: cs; margin:0px auto; display: table;bottom:8%;text-shadow:2px 2px #f00;}
-#head_logo{position: relative; margin: 0px auto; width: 550px;}
+#tagline{position: relative; font-size: 30px; color: #fff; font-family: borg; margin: 0px auto; display: table; letter-spacing: 2px; top:30px;}
+#head_logo{position: relative; margin: 0px auto; width: 700px;top:70px;}
 #head_logo img{width: 100%; height: auto;}
 .black_cover{position: absolute; height: 100%; width: 100%; background-color:rgba(0,0,25,0.8); top:0px; }
 #header{position: relative; width: 100%; height: 100px; margin:0px auto;}
 #srm_logo{float:left; width: 150px; height: auto; margin-left: 30px; margin-top:23px;}
-#milan_logo{float: right; width:100px; height: auto; margin-right: 30px; margin-top:40px;} 
+#milan_logo{float: right; width:100px; height: auto; margin-right: 30px;} 
 #srm_logo img {width: 100%; height:auto;}
 #milan_logo img{width: 100%; height:auto;}
 .nav_btn{position: relative; width:100px; height: auto;  margin-top: 110px; transition:all 0.5s;}
@@ -51,6 +65,20 @@ html{background-color: #000; }
 #guid_img{width:130px; height:auto; margin-left: auto;}
 #guide img{width:100%; height: auto;}
 #guide_callout{height:55px; width:180px; background-color: rgba(75,75,75,0.5); font-size: 15px; margin-bottom: 10px; padding:10px;}
+
+.help{position: fixed; left:25px; bottom:10px;}
+.help_circle{height: 150px; width: 150px; border-radius: 50%; background-color: rgba(75,75,75,0.5);}
+.help .help_l{font-size: 16px; position: absolute; font-family: "arial black"; color:#fff;}
+.help .help_s{position: absolute; height:0px; width:0px; border:15px solid transparent;}
+.help #W{top:32px; left:65px;}
+.help #A{top:65px; left:32px;}
+.help #D{top:65px; right:32px;}
+.help #S{bottom: 32px; left:65px;}
+.help #top{border-bottom-color: rgb(75,75,75); left:58px;}
+.help #bottom{border-top-color: rgb(75,75,75); bottom:0px; left:58px;}
+.help #right{border-left-color: rgb(75,75,75); right:0px; top:58px;}
+.help #left{border-right-color: rgb(75,75,75); top:58px;}
+
 
 #cs_back1{width: 500px; height: auto; position: relative; margin:0px auto; 	:140px;}
 #cs_back1 img{width: 100%; height: auto;}
@@ -69,12 +97,61 @@ html{background-color: #000; }
 .game_name{text-transform: uppercase; font-size: 30px; color:#79fdf3; text-shadow:3px 3px #000; cursor: pointer;}
 
 .menu_table .game_content{font-size: 30px; color:#fff;}
-.game_content{margin-left: 5px;}
+.game_content{margin-left: 5px;width: 91%;}
 .game_content ul.description{list-style-type: none;}
 .active{display: block;}
 .deactive{display: none;}
 .content_head{color:#79FDF3;}
-
+.game_rules ul{margin-left: 20px; font-size: 17px;}
 /*.menu_table td:nth-child(2){width: 50%;}
 .menu_table td:nth-child(3){width: 30%;}*/
 
+#about_box{position: relative; margin:0px auto; height:600px; width: 1110px; background-color: rgba(0,0,0,0.6); border-radius: 10px; top:75px; padding:20px;}
+.abt_children{height: 100%;}
+#abt_left{float: left; width: 535px; border-right-width: 2px; padding-right: 15px; border-right-style: dotted; border-right-color: rgba(255,255,255,0.8); font-family: borg;}
+#abt_left div:nth-child(2){font-size: 28px; margin-top: 14px; text-align: justify; color:yellow;}
+#abt_right{float: right; width: 550px;}
+/*#abt_right img{width:100%; height:auto}
+#abt_right>div{display: table; margin-top:100px;}*/
+#abt_head{margin-left: auto;}
+.head{font-family: cs; color:#fff; font-size: 40px; display: table;}
+
+/*cube styling*/
+/*#cube_holder{display: table; background-color: red; position: relative; margin:0px auto; top:140px;}
+*/#cube{position: relative; height:250px; width:250px; top:140px;
+	transform-style:preserve-3d;
+	/*-webkit-transform-style:preserve-3d;*/
+	/*transform:rotateX(95deg) rotateZ(30deg);*/
+	transition: all 500ms ease-in-out;
+	margin:0px auto;
+	/*background-color: rgba(0,0,0,0.5);*/
+}
+.faces{position: absolute; height:250px; width: 250px; background-color: rgba(100,100,100,0.7);border-radius: 5px; border:2px solid #333;}
+.faces img{height:90%; width: 90%; margin:0px auto;} 
+#f1{transform:translateZ(127px); }
+#f2{transform:rotateY(90deg) translateZ(127px);}
+#f3{transform:rotateY(180deg) translateZ(127px);}
+#f4{transform:rotateY(270deg) translateZ(127px);}
+#f5{transform:rotateX(90deg) translateZ(127px);}
+#f6{transform:rotateX(270deg) translateZ(127px);}
+
+.face1{transform:rotateX(-5deg) rotateY(330deg);}
+.face2{transform:rotateX(-5deg) rotateY(-120deg);}
+.face3{transform:rotateX(-365deg) rotateY(-210deg);}
+.face4{transform:rotateX(-5deg) rotateY(-300deg);}
+.face5{transform:rotateX(-95deg) rotateZ(-30deg);}
+.face6{transform:rotateX(85deg) rotateZ(30deg);}
+
+#contact_box{position: relative; margin:0px auto; width:1210px; height:650px; background-color:rgba(0,0,0,0.5); border-radius: 10px; top:50px;}
+.contact_children{height:98%;margin-top: 5px;}
+#contact_left{float: left; width:70%; border-right-width: 2px; border-right-style: dotted; border-right-color: #fff;}
+#contact_left ul{font-family: borg; font-size: 30px; color:yellow; margin-left: 10px; padding-right: 10px;}
+#contact_left ul li{margin-right: 10px;}
+#contact_left ul li a{color: #fff; text-decoration: none;}
+#contact_left ul li span{color:#fff;}
+#contact_right{float: right; width:30%;}
+#faq_head{margin:0px auto; font-size: 50px;}
+/*#ansh{position: fixed; height: 0px; width: 0px; top:100px; left:200px;z-index: 1000;
+	border:1px solid black;
+	border-right-color: transparent;
+}*/ 
