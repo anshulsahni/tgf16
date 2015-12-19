@@ -1,8 +1,5 @@
 @font-face{font-family: cs; src:url("../fonts/cs_regular.ttf");}
 @font-face{font-family: borg; src:url("../fonts/Borg.ttf");}
-@font-face{font-family: keys; src:url("../fonts/TypeKeysFilled.ttf");}
-
-
 html{background-color: #000; }
 *{margin:0px; padding:0px;}
 .step{color:#fff; font-size: 40px;}
@@ -64,7 +61,7 @@ html{background-color: #000; }
 #guide{position: fixed; bottom:0px; right:75px; text-align: right;}
 #guid_img{width:130px; height:auto; margin-left: auto;}
 #guide img{width:100%; height: auto;}
-#guide_callout{height:55px; width:180px; background-color: rgba(75,75,75,0.5); font-size: 15px; margin-bottom: 10px; padding:10px;}
+#guide_callout{height:55px; width:220px; background-color: rgba(75,75,75,0.5); font-size: 15px; margin-bottom: 10px; padding:10px;font-family: "calibri";}
 
 .help{position: fixed; left:25px; bottom:10px;}
 .help_circle{height: 150px; width: 150px; border-radius: 50%; background-color: rgba(75,75,75,0.5);}
@@ -103,6 +100,8 @@ html{background-color: #000; }
 .deactive{display: none;}
 .content_head{color:#79FDF3;}
 .game_rules ul{margin-left: 20px; font-size: 17px;}
+.game_small_img{margin-left: 10%; width: 80%;}
+.game_small_img img{height: 100%; width: 100%;}
 /*.menu_table td:nth-child(2){width: 50%;}
 .menu_table td:nth-child(3){width: 30%;}*/
 
@@ -144,9 +143,9 @@ html{background-color: #000; }
 
 #contact_box{position: relative; margin:0px auto; width:1210px; height:650px; background-color:rgba(0,0,0,0.5); border-radius: 10px; top:50px;}
 .contact_children{height:98%;margin-top: 5px;}
-#contact_left{float: left; width:70%; border-right-width: 2px; border-right-style: dotted; border-right-color: #fff;}
+#contact_left{float: left; width:60%; border-right-width: 2px; border-right-style: dotted; border-right-color: #fff;}
 #contact_left ul{font-family: borg; font-size: 30px; color:yellow; margin-left: 10px; padding-right: 10px;}
-#contact_left ul li{margin-right: 10px;}
+#contact_left ul li{margin-right: 10px;width: 96%;}
 #contact_left ul li a{color: #fff; text-decoration: none;}
 #contact_left ul li span{color:#fff;}
 #contact_right{float: right; width:30%;}

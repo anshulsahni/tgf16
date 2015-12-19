@@ -2,19 +2,20 @@
 	//up key-38, down-40,right-39,left-37
 var disabled=[40,37,38,39];
 impress().init();
+impress().goto("slide0");
 var current_key=0;
 var vertical_nav=0;
 $("body").keydown(function(event){
 	console.log(event.keyCode);
-	if((event.keyCode==65 || event.keyCode==39) && current_key>-2 && vertical_nav==0)
+	if((event.keyCode==65 || event.keyCode==37) && current_key>-2 && vertical_nav==0)
 	{	current_key--; flag='h';	}
-	else if((event.keyCode==68 || event.keyCode==37) && current_key<4 && vertical_nav==0)
+	else if((event.keyCode==68 || event.keyCode==39) && current_key<3 && vertical_nav==0)
 	{	current_key++; flag='h';	}
-	else if((event.keyCode==83 || event.keyCode==87) && current_key==0)
+	else if((event.keyCode==83 || event.keyCode==87 || event.keyCode==40 || event.keyCode==38) && current_key==0)
 	{
-		if(event.keyCode==83 && vertical_nav<3)
+		if((event.keyCode==83 || event.keyCode==40) && vertical_nav<2)
 			vertical_nav++;
-		else if(event.keyCode==87 && vertical_nav>0)
+		else if((event.keyCode==87 || event.keyCode==38) && vertical_nav>0)
 			vertical_nav--;
 		flag='v'
 	}
@@ -45,7 +46,7 @@ $("body").keydown(function(event){
 
 $(function(){
     $("#guide_callout").typed({
-	    strings: ["First sentence.","Second Sentence"],
+	    strings: ["Welcome to the largest gaming fest of South India","Navigation Tip: Use Keys A, W, S, D for navigating the site"],
         typeSpeed: 0,
         loop: true,
         showCursor: false

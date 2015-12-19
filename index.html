@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=1024" />
 	<title>THE GAMING FEST'16</title>
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="shortcut icon" type="image/png" href="./imgs/tgf_icon.png">
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/typed.js"></script>
 	<script type="text/javascript" src="./js/jquery.slimscroll.min.js"></script>
@@ -13,7 +14,7 @@
 		$(".step").css("height",1.12*window.innerHeight);
 		$(".step").css("width",1.12*window.innerWidth);
 		rotateCube();
-		$("#contact_left ul").slimScroll({width:"100%",height:"95%"});
+		$("#contact_left ul").slimScroll({width:"100%",height:"95%",alwaysVisible:true,color:'#fff'});
 	});
 	</script>
 	
@@ -37,7 +38,7 @@
 			<div class='black_cover'></div>
 			<div id='guide'>
 				<div id='guide_callout'>
-					This is guid callout
+					Welcome to the largest gaming fest of South India
 				</div>
 				<div id='guid_img'><img src="./imgs/gamer_white.png"></div>
 			</div>
@@ -72,6 +73,9 @@
 			<table class='menu_table' border="1px">
 				<tr>
 					<td>
+						<div class='game_small_img'>
+							<img src="./imgs/cs_small.jpg">
+						</div>
 					</td>
 					<td>
 						<span class='game_name menu_items' id='game1_title'>Counter Strike 1.6</span>
@@ -79,7 +83,6 @@
 						<ul class='menu'>
 							<li class='menu_items' id='game1_1'>prize pool</li>
 							<li class='menu_items' id='game1_2'>rules</li>
-							<li class='menu_items' id='game1_3'>event details</li>
 						</ul>
 					</td>
 					<td >
@@ -108,9 +111,7 @@
 										<li>Starting money would be $800</li>
 									</ul>
 								</li>
-								<li class='deactive' id='game1_3_content'>
-									event details
-								</li>
+								
 							</ul>
 						</div>
 					</td>
@@ -122,7 +123,9 @@
 			<table class='menu_table' border=1px>
 				<tr>
 					<td>
-
+						<div class='game_small_img'>
+							<img src="./imgs/cod_small.jpg">
+						</div>
 					</td>
 					<td>
 						<span class='game_name menu_items' id='game1_title'>Call of Duty 4 - Modern Warfare</span>
@@ -130,7 +133,6 @@
 						<ul class="menu">
 							<li class="menu_items" id='game-1_1'>prize pool</li>
 							<li class='menu_items' id='game-1_2'>rules</li>
-							<li class='menu_items' id='game-1_3'>event details</li>
 						</ul>
 					<td>
 						<div class='game_content'>
@@ -158,9 +160,6 @@
 										<li>Bomb Timer is 45 seconds</li>
 									</ul>
 								</li>
-								<li class='deactive' id='game-1_3_content'>
-									event details
-								</li>
 							</ul>
 						</div>
 					</td>
@@ -173,7 +172,9 @@
 			<table class='menu_table' border="1px">
 				<tr>
 					<td>
-						
+						<div class='game_small_img'>
+							<img src="./imgs/nfs_small.jpg">
+						</div>	
 					</td>
 					<td>
 						<span class='game_name menu_items' id='game2_title'>NFS Most Wanted</span>
@@ -181,7 +182,6 @@
 						<ul class='menu'>
 							<li class='menu_items' id='game2_1'>prize pool</li>
 							<li class='menu_items' id='game2_2'>rules</li>
-							<li class='menu_items' id='game2_3'>event details</li>
 						</ul>
 					</td>
 					<td>
@@ -218,10 +218,6 @@
 										<li>Performance Matching: On</li>
 										<li>Minimum Players : 4</li>
 									</ul>
-
-								</li>
-								<li class='deactive' id='game2_3_content'>
-									event details
 								</li>
 							</ul>
 							
@@ -235,7 +231,9 @@
 			<table class='menu_table' border="1px">
 				<tr>
 					<td>
-						
+						<div class='game_small_img'>
+							<img src="./imgs/dota_small.jpg">
+						</div>
 					</td>
 					<td>
 						<span class='game_name menu_items' id='game-2_title'>DOTA 2</span>
@@ -243,7 +241,6 @@
 						<ul class='menu'>
 							<li class='menu_items' id='game-2_1'>prize pool</li>
 							<li class='menu_items' id='game-2_2'>rules</li>
-							<li class='menu_items' id='game-2_3'>event details</li>
 						</ul>
 					</td>
 					<td>
@@ -268,11 +265,7 @@
 										<li>If a team player is missing before the match starts the team will have to find a substitute within 10-15 mins or else they will be disqualified</li>
 									</ul>
 								</li>
-								<li class='deactive' id='game-2_3_content'>
-									event details
-								</li>
-							</ul>
-							
+							</ul>							
 						</div>
 					</td>
 				</tr>
@@ -283,7 +276,9 @@
 			<table class='menu_table' border="1px">
 				<tr>
 					<td>
-						
+						<div class='game_small_img'>
+							<img src="./imgs/fifa_small.jpg">
+						</div>
 					</td>
 					<td>
 						<span class='game_name menu_items' id='game3_title'>FIFA '15</span>
@@ -291,7 +286,6 @@
 						<ul class='menu'>
 							<li class='menu_items' id='game3_1'>prize pool</li>
 							<li class='menu_items' id='game3_2'>rules</li>
-							<li class='menu_items' id='game3_3'>event details</li>
 						</ul>
 					</td>
 					<td>
@@ -320,12 +314,8 @@
 										<li>Custom formations are not permitted. However custom tactics and set pieces are available</li>
 									</ul>
 								</li>
-								<li class='deactive' id='game3_3_content'>
-									event details
-								</li>
 							</ul>
-						</div>
-						
+						</div>						
 					</td>
 				</tr>				
 			</table>
@@ -338,7 +328,7 @@
 					<div>
 						"The Gaming Fest" is back with a bang! Get ready for "edge of the seat drama" in outrageous fashion. This one promises to raise the bar set by its last edition in 2015.
 						<br>
-						TGF'15 welcomed participants from all over the country. The fest not only offered indefatigable gaming, but perky hands-on with X-BOX and Play Station to keep up the high spirits of the game. It conferred with prizes worth 2.5 Lakh INR.
+						TGF'16 welcomed participants from all over the country. The fest not only offered indefatigable gaming, but perky hands-on with X-BOX and Play Station to keep up the high spirits of the game. It conferred with prizes worth 2.5 Lakh INR.
 						<br>
 						This zealous edition of the franchise is all set to bring the house down. Let the action of racing cars, swooping aliens and hurling bullets unfold like never before and you take over all of them with your gaming controllers! Get the complete feel through unceasing video projection and exclusive personalized photos.
 						<br>
@@ -383,14 +373,14 @@
 				<div id='contact_left' class='contact_children'>
 					<div class='head' id='faq_head'>FAQ</div>
 					<ul>
-						<li><span>Q.</span> What is TGF'15? When is the Fest held?</li>
-						<li><span>A.</span> TGF'15 is an National Level Gaming Fest in cultural fest Milan'15, SRM, with an whooping aggregate of 2.5Lakh prize money to be distributed among the winners. The Fest is hosted from 29th January to 31st January, inaugurating at 11 AM on 29th January.</li>
+						<li><span>Q.</span> What is TGF'16? When is the Fest held?</li>
+						<li><span>A.</span> TGF'16 is an National Level Gaming Fest in cultural fest Milan'16, SRM, with an whooping aggregate of 6Lakh prize money to be distributed among the winners. The Fest is hosted from 4<sup>th</sup> March to 7<sup>th</sup> March</li>
 						<br>
 			        	<li><span>Q.</span> How do i register for the fest?</li>
 						<li><span>A.</span> You can get yourself registered at the Registration Desk, inside the campus, by paying an nominal fee of Rs.100.</li>
 						<br>
 			            <li><span>Q.</span> How do I reach the campus?</li>
-						<li><span>A.</span> Please Click <a href="https://www.google.co.in/maps/place/SRM+Hotel/@12.8238484,80.0417975,17z/data=!4m6!1m3!3m2!1s0x3a52f70d37c35faf:0x150be8ecf0c8f817!2sSRM!3m1!1s0x0000000000000000:0xa80fefd600a7db0c">here</a></li>
+						<li><span>A.</span> Please Click <a href="https://www.google.co.in/maps/place/SRM+Hotel/@12.8238484,80.0417975,17z/data=!4m6!1m3!3m2!1s0x3a52f70d37c35faf:0x150be8ecf0c8f817!2sSRM!3m1!1s0x0000000000000000:0xa80fefd600a7db0c" target="_blank">here</a></li>
 						<br>
 						<li><span>Q.</span> What are the accommodation and cuisine facilities available?</li>
 						<li><span>A.</span> Accommodation if opted for, will be available to the participants at the nominal fee of Rs150 in the campus dorms. During the fest, stalls will be setup for 100 continuous hours that will keep you entertained and food-packed.</li>
@@ -411,10 +401,10 @@
 			         	<li><span>A.</span> In any circumstances, if you lose you registration card, you would have to re-register yourself in order to advance in the game if any.</li>
 			         	<br>
 						<li><span>Q.</span> What are the timings of matches?</li>
-			         	<li><span>A.</span> The Event inaugurates at 11AM on 29th January. Any delay, if any, would be because of some internal problems. Participants are requested to co-operate with same. </li>
+			         	<li><span>A.</span> The Event inaugurates at 11AM on 4th March. Any delay, if any, would be because of some internal problems. Participants are requested to co-operate with same. </li>
 			         	<br>
 						<li><span>Q.</span> How will I be engaged between my games?</li>
-			         	<li><span>A.</span> Since The Fest runs at an stretch of 100 hours, there will be cultural fests, non-technical events, pro-shows etc to keep you entertained. You can further enjoy freebies on XBOX, Playstation etc . You can further sooth your eyes by watching the top games projected on various screens around the campus.</li>
+			         	<li><span>A.</span> Since The Fest runs at an stretch of 5 days, there will be cultural fests, non-technical events, pro-shows etc to keep you entertained. You can further enjoy freebies on XBOX, Playstation etc . You can further sooth your eyes by watching the top games projected on various screens around the campus.</li>
 						<br>
 						<li><span>Q.</span> How will I be informed about my fixtures?</li>
 			         	<li><span>A.</span> Your fixtures details will be sent to your contact details so the participants are requested to keep themselves updated to their contact detail or they may miss the action. Be in touch with event coordinator.</li>
@@ -423,7 +413,12 @@
 			         	<li><span>A.</span> In case of any discrepancy, you are requested to inform the event coordinator immediately and they will look into the matter to solve the problem.</li>
 					</ul>
 				</div>
-				<div id='contact_right' class='contact_children'></div>
+				<div id='contact_right' class='contact_children'>
+					<div class='head' id='contact_head'>
+						CONTACT US
+					</div>
+
+				</div>
 			</div>
 		</div>
 	</div>
