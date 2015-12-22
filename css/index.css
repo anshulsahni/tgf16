@@ -148,7 +148,11 @@ html{background-color: #000; }
 #contact_left ul li{margin-right: 10px;width: 96%;}
 #contact_left ul li a{color: #fff; text-decoration: none;}
 #contact_left ul li span{color:#fff;}
-#contact_right{float: right; width:30%;}
+#contact_right{float: right; width:39%;}
+#contact_head{display: table; margin:0px auto;}
+#contact_details{font-family: borg; margin-top:30px; font-size: 35px; margin-left: 10px;}
+#contact_details .yellow{color:yellow;}
+#contact_details .white{color:#fff;}
 #faq_head{margin:0px auto; font-size: 50px;}
 /*#ansh{position: fixed; height: 0px; width: 0px; top:100px; left:200px;z-index: 1000;
 	border:1px solid black;
