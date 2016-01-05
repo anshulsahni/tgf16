@@ -6,6 +6,11 @@
 		<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" /> 
     	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script>
+    	<style type="text/css">
+    		.tablist-left{width:40%; display: inline-block;}
+    		.tablist-content{width: 40%; display: inline-block; vertical-align:text-bottom; margin-left:5%;}
+    		.special_content{margin-left: auto; margin-right: auto; text-align: center; margin-top: 20px;}
+    	</style>
 	</head>
 	<body>
 		<div data-role='page' data-theme="b" id='home'>
@@ -36,8 +41,21 @@
 					</ul>
 				</div>
 			</div>
-			<div data-role='content'>
-				Special
+			<div data-role='content' data-theme="b">
+				<div data-role='controlgroup'>
+					<a href="#" class='ui-btn ui-corner-all'>What So Special About Us</a>
+				</div>
+				<div class='special_content'>
+						"The Gaming Fest" is back with a bang! Get ready for "edge of the seat drama" in outrageous fashion. This one promises to raise the bar set by its last edition in 2015.
+						<br>
+						TGF'16 welcomed participants from all over the country. The fest not only offered indefatigable gaming, but perky hands-on with X-BOX and Play Station to keep up the high spirits of the game. It conferred with prizes worth 2.5 Lakh INR.
+						<br>
+						This zealous edition of the franchise is all set to bring the house down. Let the action of racing cars, swooping aliens and hurling bullets unfold like never before and you take over all of them with your gaming controllers! Get the complete feel through unceasing video projection and exclusive personalized photos.
+						<br>
+						As the intensity increases, so do the stakes, with prizes worth 6 Lakh INR (INR 3.25 Lakh + and 2.75 Lakh*) to be won in TGF'16.Witness the unyielding nature of the "gamer-junkies" only here, in South India's Largest Gaming Fest. 
+						<br>
+						So, come aboard with us in this highly daunting voyage from 4th to 6th March, 2016.
+				</div>
 			</div>
 		</div>
 		<div data-role="page" data-theme="b" id='games'>
@@ -56,216 +74,66 @@
 				<div data-role='collapsibleset'>
 					<div data-role='collapsible'>
 						<h3>Counter Strike 1.6</h3>
-						<p>
 							<div data-role='tabs'>
-								<div data-role='navbar'>
-									<ul>
-										<li><a href="#pro" data-ajax="false">Pro level</a></li>
-										<li><a href="#semi_pro" data-ajax="false">Semi-Pro Level</a></li>
+									<ul data-role='listview' data-inset="true" class='tablist-left'>
+										<li><a href="#pro" data-ajax="false">Pro/Semi-Pro level</a></li>
+										<li><a href="#semi_pro" data-ajax="false">Amateur Level</a></li>
 									</ul>
+								<div id='pro' class='tablist-content'>
+									<p><span class='prize_pos'>I Prize</span>-&#8377; 60,000</p>
+									<p><span class='prize_pos'>II Prize</span>-&#8377; 20,000</p>
 								</div>
-								<div id='pro'>
-									<table data-role='table' id='prize_table' data-mode='reflow' class='ui-responsive'>
-										<thead>
-											<tr>
-												<th></th>
-												<th></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>I Prize</td>
-												<td>&#8377; 60,000</td>
-											</tr>
-											<tr>
-												<td>II Prize</td>
-												<td>&#8377; 20,000</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<div id='semi_pro'>
-									<table data-role='table' id='prize_table' data-model='reflow' class='ui-responsive'>
-										<thead>
-											<tr>
-												<th></th>
-												<th></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>I Prize </td>
-												<td>&#8377; 15,000</td>
-											</tr>
-											<tr>
-												<td>II Prize</td>
-												<td>&#8377; 7,500</td>
-											</tr>
-										</tbody>
-									</table>
+								<div id='semi_pro' class='tablist-content'>
+									<p><span class='prize_money'>I Prize</span>-&#8377; 15,000</p>
+									<p><span class='prize_money'>II Prize</span>-&#8377; 7,500</p>
 								</div>
 							</div>
-						</p>
 					</div>
 					<div data-role='collapsible'>
 						<h3>NFS Most Wanted</h3>
-						<p>
-							<table data-role='table' id='prize_table' data-model='reflow' class='ui-responsive'>
-								<thead>
-									<tr>
-										<th></th>
-										<th></th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>I Prize</td>
-										<td>&#8377; 17,500</td>
-									</tr>
-									<tr>
-										<td>II Prize</td>
-										<td>&#8377; 10,000</td>
-									</tr>
-									<tr>
-										<td>III Prize</td>
-										<td>&#8377; 5,000</td>
-									</tr>
-								</tbody>
-							</table>
-						</p>
+						<p><span class='prize_money'>I Prize</span>-&#8377; 17,500</p>
+						<p><span class='prize_money'>II Prize</span>-&#8377; 10,000</p>
+						<p><span class='prize_money'>III Prize</span>-&#8377; 5,000</p>
 					</div>
 					<div data-role='collapsible'>
 						<h3>FIFA'15</h3>
-						<p>
-							<table data-role='table' data-model='reflow' id='prize_table' class='ui-responsive'>
-								<thead>
-									<tr>
-										<th></th>
-										<th></th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>I Prize</td>
-										<td>&#8377; 17,500</td>
-									</tr>
-									<tr>
-										<td>II Prize</td>
-										<td>&#8377; 10,000</td>
-									</tr>
-									<tr>
-										<td>III Prize</td>
-										<td>&#8377; 5,000</td>
-									</tr>
-								</tbody>
-							</table>
-						</p>
+						<p><span class='prize_money'>I Prize</span>-&#8377; 17,500</p>
+						<p><span class='prize_money'>II Prize</span>-&#8377; 10,000</p>
+						<p><span class='prize_money'>III Prize</span>-&#8377; 5,000</p>
 					</div>
 					<div data-role='collapsible'>
 						<h3>Call of Duty 4 Modern Warfare</h3>
-						<p>
 							<div data-role='tabs'>
-								<div data-role='navbar'>
-									<ul>
+									<ul data-role='listview' data-inset="true" class='tablist-left'>
 										<li><a href="#pro" data-ajax="false">Pro/Semi-Pro Level</a></li>
-										<li><a href="#semi_pro" data-ajax="false">Amateur Level</li>
+										<li><a href="#semi_pro" data-ajax="false">Amateur Level</a></li>
 									</ul>
+								<div id='pro' class='tablist-content'>
+									<p><span class='prize_money'>I Prize</span>-&#8377; 50,000</p>
+									<p><span class='prize_money'>II Prize</span>-&#8377; 15,000</p>
 								</div>
-								<div id='pro'>
-									<table data-role='table' data-model='reflow' id='prize_table' class='ui-responsive'>
-										<thead>
-											<tr>
-												<th></th>
-												<th></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>I Prize</td>
-												<td>&#8377; 50,000</td>
-											</tr>
-											<tr>
-												<td>II Prize</td>
-												<td>&#8377; 15,000</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<div id='semi_pro'>
-									<table data-role='table' data-model='reflow' id='prize_table' class='ui-responsive'>
-										<thead>
-											<tr>
-												<th></th>
-												<th></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>I Prize</td>
-												<td>&#8377; 12,500</td>
-											</tr>
-											<tr>
-												<td>II Prize</td>
-												<td>&#8377; 5,500</td>
-											</tr>
-										</tbody>
-									</table>
+								<div id='semi_pro' class='tablist-content'>
+									<p><span class='prize_money'>I Prize</span>-&#8377; 12,500</p>
+									<p><span class='prize_money'>II Prize</span>-&#8377; 5,500</p>
 								</div>
 							</div>
-						</p>
 					</div>
 					<div data-role='collapsible'>
 						<h3>Dota 2</h3>
-						<p>
 							<div data-role='tabs'>
-								<div data-role='navbar'>
-									<ul>
-										<li><a href="#pro">Pro/Semi-Pro Level</a></li>
-										<li><a href="#semi_pro">Amateur Level</a></li>
-									</ul>
+								<ul data-role='listview' data-inset="true" class='tablist-left'>
+									<li><a href="#pro">Pro/Semi-Pro Level</a></li>
+									<li><a href="#semi_pro">Amateur Level</a></li>
+								</ul>
+								<div id='pro' class='tablist-content'>
+									<p><span class='prize_money'>I Prize</span>-&#8377; 60,000</p>
+									<p><span class='prize_money'>II Prize</span>-&#8377; 20,000</p>
 								</div>
-								<div id='pro'>
-									<table data-role='table' data-model='reflow' id='prize_table' class='ui-responsive'>
-										<thead>
-											<tr>
-												<th></th>
-												<th></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>I Prize</td>
-												<td>&#8377; 60,000</td>
-											</tr>
-											<tr>
-												<td>II Prize</td>
-												<td>&#8377; 20,000</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<div id='sem_pro'>
-									<table data-role='table' data-model='reflow' id='prize_table' class='ui-responsive'>
-										<thead>
-											<tr>
-												<th></th>
-												<th></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>I Prize</td>
-												<td>&#8377; 15,000</td>
-											</tr>
-											<tr>
-												<td>II Prize</td>
-												<td>&#8377; 7,500</td>
-											</tr>
-										</tbody>
-									</table>
+								<div id='sem_pro' class='tablist-content'>
+									<p><span class='prize_money'>I Prize</span>-&#8377; 15,000</p>
+									<p><span class='prize_money'>II Prize</span>-&#8377; 7,500</p>
 								</div>
 							</div> 
-						</p>
 					</div>
 				</div>
 			</div>
