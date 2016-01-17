@@ -1,0 +1,37 @@
+@font-face{font-family: borg; src:url("../../fonts/Borg.ttf");}
+
+.tablist-left{width:40%; display: inline-block;}
+.tablist-content{width: 40%; display: inline-block; vertical-align:text-bottom; margin-left:5%;}
+.special_content{margin-left: auto; margin-right: auto; text-align: center; margin-top: 20px;}
+
+#gaming_club{position: relative; display: table; font-size: 1.4rem; font-family: borg; margin-left: auto; letter-spacing: 5px;}
+#presented_by{margin-left:auto; font-size:0.7rem; display:table; padding-right: 5px;}
+#logo{margin:0px auto; width:50%;}
+#logo img{width:100%;}
+#tgf_logo{position: relative; margin:0px auto; display: table; width:60%;}
+#tgf_logo img{width:100%;}
+/*#faq_list{font-size: 0.7rem		!important;}*/
+@media all and (orientation:portrait) {
+	#home{background:url("../imgs/mp_home_back.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center;}
+	#special{background:url("../imgs/mp_special_back1.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center;}
+	#games{background:url("../imgs/mp_games_back.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center;}
+	#faq{background:url("../imgs/mp_faq_back.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center;}
+	#contact{background:url("../imgs/mp_contact_back.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center;}
+	
+}    	
+@media all and (orientation:landscape){
+	#home{background:url("../imgs/ml_home_back.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center;}	
+	#special{background:url("../imgs/ml_special_back.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center;}
+	#games{background:url("../imgs/ml_games_back.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center;}
+	#faq{background:url("../imgs/ml_faq_back.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center;}
+	#contact{background:url("../imgs/ml_contact_back.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center;}
+}
+
+.ui-icon-ques:after {background-image: url("../imgs/icons/ques.png"); background-size: 100%;}
+.ui-icon-nfs:after{background-image: url("../imgs/icons/nfs.png"); background-size: 100%;}
+.ui-icon-cs:after{background-image: url("../imgs/icons/cs.png"); background-size: 100%;}
+.ui-icon-cod:after{background-image: url("../imgs/icons/cod.png"); background-size: 100%;}
+.ui-icon-fifa:after{background-image: url("../imgs/icons/fifa.png"); background-size: 100%;}
+.ui-icon-dota:after{background-image: url("../imgs/icons/dota.png"); background-size: 100%;}
+
+#faq .ui-btn{white-space:normal !important;}

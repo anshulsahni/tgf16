@@ -6,11 +6,7 @@
 		<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" /> 
     	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script>
-    	<style type="text/css">
-    		.tablist-left{width:40%; display: inline-block;}
-    		.tablist-content{width: 40%; display: inline-block; vertical-align:text-bottom; margin-left:5%;}
-    		.special_content{margin-left: auto; margin-right: auto; text-align: center; margin-top: 20px;}
-    	</style>
+    	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	</head>
 	<body>
 		<div data-role='page' data-theme="b" id='home'>
@@ -26,10 +22,21 @@
 				</div>
 			</div>
 			<div data-role='content'>
-				Anshul Sahni
+				<div id='home_header'>
+					<div id='logo'>
+						<img src="./imgs/mobile_logo.png">
+					</div>
+				</div>
+				<div id='home_content'>
+					<div id='tgf_logo'>
+						<img src="./imgs/tgf_head_mobile.png">
+					</div>
+					<div id='presented_by'>Presented By</div>
+					<div id='gaming_club'>SRM GAMING CLUB</div>
+				</div>
 			</div>
 		</div>
-		<div data-role='page' id='special'>	
+		<div data-role='page' id='special' data-theme="b">	
 			<div data-role='header' data-id='nav_bar' data-position="fixed" id='nav_bar' data-theme="b">
 				<div data-role='navbar'>
 					<ul>
@@ -41,7 +48,7 @@
 					</ul>
 				</div>
 			</div>
-			<div data-role='content' data-theme="b">
+			<div data-role='content'>
 				<div data-role='controlgroup'>
 					<a href="#" class='ui-btn ui-corner-all'>What So Special About Us</a>
 				</div>
@@ -71,8 +78,8 @@
 				</div>
 			</div>
 			<div data-role='content'>
-				<div data-role='collapsibleset'>
-					<div data-role='collapsible'>
+				<div data-role='collapsibleset' class='ui-nodisc-icon'>
+					<div data-role='collapsible' data-expanded-icon='cs' data-collapsed-icon='cs'>
 						<h3>Counter Strike 1.6</h3>
 							<div data-role='tabs'>
 									<ul data-role='listview' data-inset="true" class='tablist-left'>
@@ -89,19 +96,19 @@
 								</div>
 							</div>
 					</div>
-					<div data-role='collapsible'>
+					<div data-role='collapsible' data-expanded-icon='nfs' data-collapsed-icon='nfs'>
 						<h3>NFS Most Wanted</h3>
 						<p><span class='prize_money'>I Prize</span>-&#8377; 17,500</p>
 						<p><span class='prize_money'>II Prize</span>-&#8377; 10,000</p>
 						<p><span class='prize_money'>III Prize</span>-&#8377; 5,000</p>
 					</div>
-					<div data-role='collapsible'>
+					<div data-role='collapsible' data-expanded-icon='fifa' data-collapsed-icon='fifa'>
 						<h3>FIFA'15</h3>
 						<p><span class='prize_money'>I Prize</span>-&#8377; 17,500</p>
 						<p><span class='prize_money'>II Prize</span>-&#8377; 10,000</p>
 						<p><span class='prize_money'>III Prize</span>-&#8377; 5,000</p>
 					</div>
-					<div data-role='collapsible'>
+					<div data-role='collapsible' data-expanded-icon='cod' data-collapsed-icon='cod'>
 						<h3>Call of Duty 4 Modern Warfare</h3>
 							<div data-role='tabs'>
 									<ul data-role='listview' data-inset="true" class='tablist-left'>
@@ -118,7 +125,7 @@
 								</div>
 							</div>
 					</div>
-					<div data-role='collapsible'>
+					<div data-role='collapsible' data-expanded-icon='dota' data-collapsed-icon='dota'>
 						<h3>Dota 2</h3>
 							<div data-role='tabs'>
 								<ul data-role='listview' data-inset="true" class='tablist-left'>
@@ -129,7 +136,7 @@
 									<p><span class='prize_money'>I Prize</span>-&#8377; 60,000</p>
 									<p><span class='prize_money'>II Prize</span>-&#8377; 20,000</p>
 								</div>
-								<div id='sem_pro' class='tablist-content'>
+								<div id='semi_pro' class='tablist-content'>
 									<p><span class='prize_money'>I Prize</span>-&#8377; 15,000</p>
 									<p><span class='prize_money'>II Prize</span>-&#8377; 7,500</p>
 								</div>
@@ -150,58 +157,58 @@
 					</ul>
 				</div>
 			</div>
-			<div data-role='content'>
-				<div data-role='collapsibleset'>
+			<div data-role='content'>				
+				<div data-role='collapsibleset' data-collapsed-icon='ques' data-expanded-icon='ques' data-iconpos='right' id='faq_list'>
 					<div data-role='collapsible'>
-						<h3>What is TGF'16? When is the Fest held?</h3>
+						<h3>What is TGF'16 When is the Fest held</h3>
 						<p> TGF'16 is an National Level Gaming Fest in cultural fest Milan'16, SRM, with an whooping aggregate of 6Lakh prize money to be distributed among the winners. The Fest is hosted from 4<sup>th</sup> March to 7<sup>th</sup> March</p>
 					</div>
 					<div data-role='collapsible'>
-						<h3>How do i register for the fest?</h3>
+						<h3>How do i register for the fest</h3>
 						<p>You can get yourself registered at the Registration Desk, inside the campus, by paying an nominal fee of &#8377; 100.</p>
 					</div>
 					<div data-role='collapsible'>
-						<h3>How do I reach the campus?</h3>
+						<h3>How do I reach the campus</h3>
 						<p>Please Click <a href="https://www.google.co.in/maps/place/SRM+Hotel/@12.8238484,80.0417975,17z/data=!4m6!1m3!3m2!1s0x3a52f70d37c35faf:0x150be8ecf0c8f817!2sSRM!3m1!1s0x0000000000000000:0xa80fefd600a7db0c" target="_blank">here</a></p>
 					</div>
 					<div data-role='collapsible'>
-						<h3>What are the accommodation and cuisine facilities available?</h3>
+						<h3>What are the accommodation and cuisine facilities available</h3>
 						<p>Accommodation if opted for, will be available to the participants at the nominal fee of Rs150 in the campus dorms. During the fest, stalls will be setup for 100 continuous hours that will keep you entertained and food-packed.</p>
 					</div>
 					<div data-role='collapsible'>
-						<h3>What is the Configuration of the Systems available?</h3>
+						<h3>What is the Configuration of the Systems available</h3>
 						<p>Intel Core i5, 4th Gen Processor, 1GB Intel HD Graphics, 4GB RAM, 1TB HardDisk, 15.6" LCD Screen, Key-Board, Mouse</p>
 					</div>
 					<div data-role='collapsible'>
-						<h3>Will the gaming consoles provided by you?</h3>
+						<h3>Will the gaming consoles provided by you</h3>
 						<p>No. Players have to get their own consoles.</p>
 					</div>
 					<div data-role='collapsible'>
-						<h3>When will I get the prize money?</h3>
+						<h3>When will I get the prize money</h3>
 						<p>Prize Money will be distributed at the end of the fest, during the Prize Distribution Ceremony. It is mandatory for the participant to produce the ID cards.</p>
 					</div>
 					<div data-role='collapsible'>
-						<h3>Can I register in both Amateur and Pro?</h3>
+						<h3>Can I register in both Amateur and Pro</h3>
 						<p>Yes. If you satisfy the condition specified in the rules and regulations tab you are eligible for both amateur and pro.For Dota- If more than three members in a team have more than 4000 MMR they are not allowed to register in Amateur category.For CS- If more than three members in a team has represented in ESWC, WCG etc the team cannot register in Amateur category. </p>
 					</div>
 					<div data-role='collapsible'>
-						<h3>What if I lose my registration card?</h3>
+						<h3>What if I lose my registration card</h3>
 						<p>In any circumstances, if you lose you registration card, you would have to re-register yourself in order to advance in the game if any.</p>
 					</div>
 					<div data-role='collapsible'>
-						<h3>What are the timings of matches?</h3>
+						<h3>What are the timings of matches</h3>
 						<p>The Event inaugurates at 11AM on 4th March. Any delay, if any, would be because of some internal problems. Participants are requested to co-operate with same.</p>
 					</div>
 					<div data-role='collapsible'>
-						<h3>How will I be engaged between my games?</h3>
+						<h3>How will I be engaged between my games</h3>
 						<p>Since The Fest runs at an stretch of 5 days, there will be cultural fests, non-technical events, pro-shows etc to keep you entertained. You can further enjoy freebies on XBOX, Playstation etc . You can further sooth your eyes by watching the top games projected on various screens around the campus.</p>
 					</div>
 					<div data-role='collapsible'>
-						<h3>How will I be informed about my fixtures?</h3>
+						<h3>How will I be informed about my fixtures</h3>
 						<p>Your fixtures details will be sent to your contact details so the participants are requested to keep themselves updated to their contact detail or they may miss the action. Be in touch with event coordinator.</p>
 					</div>
 					<div data-role='collapsible'>
-						<h3>Whom should i contact in the case of any discrepancy?</h3>
+						<h3>Whom should i contact in the case of any discrepancy</h3>
 						<p>In case of any discrepancy, you are requested to inform the event coordinator immediately and they will look into the matter to solve the problem.</p>
 					</div>
 				</div>
@@ -220,7 +227,19 @@
 				</div>
 			</div>
 			<div data-role='content'>
-				Contact
+				<div data-role='controlgroup'>
+					<a href="#" class='ui-btn ui-corner-all'>Contact Us</a>
+				</div>
+				<div id='contact_details'>
+					<p class='contact_content'>For queries related to gaming</p>
+					<button class='ui-btn ui-shadow ui-btn-icon-left ui-icon-phone'>+91 9819563541</button>
+					<button class='ui-btn ui-shadow ui-btn-icon-left ui-icon-phone'>+91 9941227869</button>
+					<button class='ui-btn ui-shadow ui-btn-icon-left ui-icon-mail'>tgf@srmgamingclub.in</button>
+					<br>
+					<p class='contact_content'>For queries related to sponsorship</p>
+					<button class='ui-btn ui-shadow ui-btn-icon-left ui-icon-phone'>+91 8608690068</button>
+					<button class='ui-btn ui-shadow ui-btn-icon-left ui-icon-mail'>sponsorship@srmgamingclub.in</button>
+				</div>
 			</div>
 		</div>
 	</body>
